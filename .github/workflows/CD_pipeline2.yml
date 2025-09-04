@@ -23,7 +23,7 @@ jobs:
 
     - name: Import Notebook to Workspace
       run: |
-        databricks workspace import sample_sales_notebook.py /Workspace/Users/your_username/your_notebook -l python --overwrite
+        databricks workspace import sample_sales_notebook.py /Workspace/Users/admin@mngenvmcap835596.onmicrosoft.com/CI-CD -l python --overwrite
       env:
         DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
         DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
